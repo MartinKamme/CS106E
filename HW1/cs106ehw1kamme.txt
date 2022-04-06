@@ -1,0 +1,47 @@
+
+Computer Capabilities
+
+1. Processor: Intel(R) Core(TM) i7-6700K CPU 
+   Speed:     4.00GHz
+
+2. RAM: 16 GB
+
+3. 26.00 GB available out of 465 GB
+
+
+Working with Bits and Bytes
+
+4. 0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111
+   represents numbers from 0 to 15
+
+5. 2^x = 55 -> x = log2(55) 
+	    -> x ~ 6
+   2^x = 170 -> x = log2(170)
+	     -> x ~ 8 
+   2^x = 6366 -> x = log2(6366)
+	      -> x ~ 13
+
+Computer Music
+
+6. 441000 samples per second, 3*60 = 180 seconds, 16 bits per sample, 2 channels
+   44100*180*16*2 = 254016000 bits
+		  = 31.752 Mbytes
+  
+  128000 bits per second, 3*60 = 180 seconds
+  128000 * 180 = 23040000 bits
+	       = 2.88 Mbytes
+
+7. 192000 samples per second, 3*60 = 180 seconds, 24 bits per sample, 2 channels
+   192000 * 24 * 180 * 2= 1658880000 bits
+		= 207.36 Mbytes
+
+
+Computer Images
+
+8. 60: 56 Kbytes, hard to distinguish losses upon first glance. Zooming in shows decrease in quality of edge distinction
+   30: 31 Kbytes, clear decrease in image quality; sky is now pixelated with pixel edges showing up in darker parts of the image
+   10: 10 Kbytes, obvious decrease in image quality; very pronounced pixel layers in the sky, pixels are easily dstinguished in darker colored parts of the image
+
+9. JPEG is meant to store photographs while PNG is meant to store computer generated images. 
+   The hoover tower is a photograph which is why the JPEG version takes up less space. 
+   The seal is a computer generated image which is why the PNG version takes up less space. 
