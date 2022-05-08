@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+<title>Compound Interest</title>
+</head>
+<body>
+<h1>Sales Tax Calculation</h1>
+
+<p>Please enter an initial amount, an expected return percentage, and the number of years you plan to leave the money invested:</p>
+
+<form id="theForm" action="compounding-result.php" method="post">
+<table>
+    <tr><td>Initial Amount:</td><td><input type="text" value="1000" name="amount" /></td></tr>
+    <tr><td>Interest Rate:</td><td><input type="text" value="8" name="rate" /></td></tr>
+    <tr><td>Years:</td><td><input type="text" value="30" name="years" /></td></tr>
+</table> <input type="button" id="calcBtn" value="Calculate" />
+</form>
+<p id="result"></p>
+<script>
+    function calcResult() {
+        var form = document.getElementById("theForm");
+        var amount = theForm.amount.value;
+        var rate = theForm.rate.value;
+        var years = theForm.years.value;
+        var result = amount * Math.pow(1 + rate / 100,years);
+        var textResult = result.toFixed(2);
+        document.getElementById("result").innerHTML = `\$${amount} invested at ${rate}% for ${years} years will be worth \$${textResult}`;
+    }
+    document.getElementById("calcBtn").addEventListener(
+        "click",calcResult);
+</script>
+</body>
+</html>

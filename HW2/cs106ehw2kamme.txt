@@ -1,3 +1,42 @@
-Hardware
+1. The Inter(R) Core(TM) i7-8565U CPU has 4 cores
+   With Google chrome, Notepad, Setting, spotify, Task Manger, Windows Command Prompt and Windows Explorer open, 7%
+   of the CPU is being used. 	
 
-1. Cores: 
+2. With the same afformentioned apps running, 47% of the computer's memory is being used, with chrome by far using 
+   the most memory.  Got up to 91% of RAM utilization and the computer became insufferable to use and quickly
+   drained the battery.
+
+
+Operating Systems
+
+3. Assuming you are only interacting with apps that simultaneously require less than 4GB of memory, 
+   the computer will be able to run all other tasks (albeit slowly) as virtual memory on the SSD. However, 
+   you will be unable to use the text editor/browser/ or music app in tandem with the video player app and your 
+   computer will likely crash one or more of those apps. 
+
+
+Computer Networks
+
+4. 70.235.156.160
+   Unknown adapter Local Area Connection:         00-FF-1A-9E-14-E2
+   Wireless LAN adapter Local Area Connection* 1: 9E-B6-D0-98-20-9F
+   Wireless LAN adapter Local Area Connection* 2: AE-B6-D0-98-20-9F
+   Wireles LAN adapter Wi-Fi:             	  9C-B6-D0-98-20-9F
+   Ethernet adapter Bluetooth Network Connection: 9C-B6-D0-98-20-A0
+   Ethernet adapter vEthernet (WSL): 		  00-15-5D-8D-0A-8D
+
+5.  cs.stanford.edu :          171.64.64.64
+    engineering.stanford.edu : 52.36.131.229
+    axess.stanford.edu :       171.67.36.18
+
+    I expected all these to at least have the same first number and a close second number, apparently that is only 
+    the case for cs and axess whereas engineering has a vastly different IP address.
+
+    cs.gatech.edu : 		 52.72.26.168
+    
+    Interestingly, the engineering.stanford.edu and cs.gatech.edu have the same leading number in their IP addresses!
+    The other stanford affiliated webstite IPs are significantly different from that of the ga website, as expected. 
+    
+6. 250,000,000 bytes * 8 bits/byte / (100,000,000 bit/s) -> 20 seconds
+ 
+7. 250,000,000 bytes * 8 bits/byte / (100,000,000 * 0.5 bit/s) -> 40 seconds

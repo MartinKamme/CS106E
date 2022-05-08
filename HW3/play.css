@@ -1,0 +1,15 @@
+.title, .author {
+text-align: center;
+}
+
+.scene, .location, .stageDirection, .actor {
+font-family: Sans-Serif;
+}
+
+.stageDirection{ 
+font-style: italic;
+font-size: xx-small;
+}
+.actor {
+font-weight: bold;
+}
