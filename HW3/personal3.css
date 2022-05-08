@@ -1,0 +1,43 @@
+h1 { color: yellow;
+background-color: blue;
+font-family:Sans-Serif;
+text-align: center;
+}
+
+h2 {
+font-family:Sans-Serif;
+}
+
+img {
+float: left;
+width: 100px;
+height: auto; 
+border-style: solid;
+border-color: blue;
+margin: 10px; 
+padding: 10px;
+}
+
+a:link {
+color: yellow; 
+text-decoration: none
+}
+
+a:visited {
+color: blue; 
+text-decoration: none
+}
+
+a:hover {
+color: hotpink; 
+text-decoration: none
+}
+
+a:active {
+color: hotpink; 
+text-decoration: none
+}
+
+ul {
+list-style-type: square;
+}
