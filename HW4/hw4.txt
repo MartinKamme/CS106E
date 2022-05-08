@@ -1,0 +1,102 @@
+Unix and SQL
+
+1. 
+sqlite> CREATE TABLE cities (
+ ...> city TEXT,
+ ...> continent TEXT,
+ ...> population INTEGER,
+ ...> );
+
+2. 
+INSERT INTO cities VALUES ('Seattle','North America',3700000);
+
+3. 
+SELECT * FROM cities WHERE continent LIKE 'A%';
+city        continent   population
+----------  ----------  ----------
+Cairo       Africa      15200000
+Lagos       Africa      21000000
+Kyoto       Asia        1474570
+Mumbai      Asia        20400000
+Shanghai    Asia        24152700
+Taipei      Asia        2705000
+Melbourne   Australia   3900000
+
+
+4. 
+SELECT * FROM cities WHERE population > 1000000 AND population < 5000000;
+city        continent   population
+----------  ----------  ----------
+Kyoto       Asia        1474570
+Taipei      Asia        2705000
+Melbourne   Australia   3900000
+Rome        Europe      2715000
+Rostov-on-  Europe      1052000
+Boston      North Amer  4630000
+Seattle     North Amer  3700000
+
+5. 
+SELECT * FROM cities WHERE continent LIKE '%America' AND population > 5000000 ORDER BY city ASC;
+city        continent      population
+----------  -------------  ----------
+Atlanta     North America  5268000
+New York    North America  21295000
+Rio de Jan  South America  12280702
+San Franci  North America  5780000
+Santiago    South America  5507282
+
+
+Client-Side vs Server-Side Processing
+
+1. 
+Client side is much easier to use, can enter different information into the forms without reopening the entire site. 
+
+2. 
+Get no-internet t-rex when disconnecting server-side version from internet and hitting submit
+Program works fine when disconnecting client side version form internet
+This mean that using the server-side version of the program requires an internet connection. 
+
+
+Server-Side with SQL Experiments
+
+1.
+name        bringing
+----------  ----------
+Patrick     Drinks
+Molly       Dog Treats
+Tammy       Dessert
+Martin      baloons
+
+
+Webstie Observations
+1. Amazon.com
+	Client Side: 
+		The Ads at the top of the homepage scroll fine without any connection
+		Hovering over my Account and Lists produces the expected dropdown menu
+		Selecting All from the bar opens the main menu of all options
+	Server-Side: 
+		Selecting Returns and Orders
+
+2. Wikipedia.com
+	Client Side: 
+		Search bar highlights when clicking in it
+		Cursor blinks when search bar is selected
+		Can open drop-down menu to Read Wikipedia in your language
+	Server-Side: 
+		Selecting a language
+
+3. pinkbike.com
+	Client-Side: 
+		Changing the mouse from arrow to hand as hovering over different items
+		Highlighting different items of the menu in red as over over them
+		Places menu item shows drop down menu when hovering over it
+	Server-Side: 
+		Searching the news module
+		
+4. gmail.com
+	Client-Side: 
+		Showing hints for buttons when hovering (ex refresh, not starred)
+		Switching between Primary, Social, and Promotions tabs
+		Opening email texts
+	Server-Side
+		Loading email images
